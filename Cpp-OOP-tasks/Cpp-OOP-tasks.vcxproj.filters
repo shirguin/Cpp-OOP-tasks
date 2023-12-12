@@ -24,12 +24,18 @@
     <ClCompile Include="Counter.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Abonent.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Point.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Counter.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Abonent.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
