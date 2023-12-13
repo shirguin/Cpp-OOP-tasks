@@ -11,6 +11,25 @@ Abonent::Abonent()
 	this->_additionalInformation = "";
 }
 
+Abonent::Abonent(
+	std::string firstName, 
+	std::string secondName, 
+	std::string lastName, 
+	std::string homeTelephone, 
+	std::string workTelephone, 
+	std::string mobilTelephone, 
+	std::string additionalInformation
+)
+{
+	this->_firstName = firstName;
+	this->_secondName = secondName;
+	this->_lastName = lastName;
+	this->_homeTelephone = homeTelephone;
+	this->_workTelephone = workTelephone;
+	this->_mobilTelephone = mobilTelephone;
+	this->_additionalInformation = additionalInformation;
+}
+
 void Abonent::setFirstName(std::string firstName)
 {
 	this->_firstName = firstName;
@@ -44,6 +63,13 @@ void Abonent::setMobilTelephone(std::string mobilTelephone)
 void Abonent::setAdditionalInformation(std::string additionalInformation)
 {
 	this->_additionalInformation = additionalInformation;
+}
+
+void Abonent::print()
+{
+	std::cout << this->getFirstName() + " " + this->getSecondName() + " " + this->getLastName() +
+		" " + this->getHomeTelephone() + " " + this->getWorkTelephone() + " " + this->getMobilTelephone() + 
+		" " + this->getAdditionalInformation() << std::endl;
 }
 
 std::string Abonent::getFirstName()

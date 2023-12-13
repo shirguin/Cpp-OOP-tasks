@@ -130,11 +130,13 @@
     <ClCompile Include="Abonent.cpp" />
     <ClCompile Include="Counter.cpp" />
     <ClCompile Include="Cpp-OOP-tasks.cpp" />
+    <ClCompile Include="PhoneBook.cpp" />
     <ClCompile Include="Point.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Abonent.h" />
     <ClInclude Include="Counter.h" />
+    <ClInclude Include="PhoneBook.h" />
     <ClInclude Include="Point.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

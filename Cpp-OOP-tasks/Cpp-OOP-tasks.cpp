@@ -1,6 +1,9 @@
 ﻿#include <iostream>
+#include <list>
 //#include "Point.h"
-#include "Counter.h"
+//#include "Counter.h"
+
+#include "PhoneBook.h"
 
 using namespace std;
 
@@ -16,7 +19,28 @@ int main()
 {
     setlocale(LC_ALL, "ru");
 
-    cout << "Привет мир!";
+    list<Abonent> abonents = {
+        Abonent("Алексей", "Евгеньевич", "Ширгин", "465-94-64", "465-97-14", "464-10-49", "Менеджер"),
+        Abonent("Иван", "Евгеньевич", "Ширгин", "465-94-64", "465-97-14", "464-10-49", "Менеджер"),
+        Abonent("Сергей", "Евгеньевич", "Ширгин", "465-94-64", "465-97-14", "464-10-49", "Менеджер"),
+        Abonent("Макар", "Евгеньевич", "Ширгин", "465-94-64", "465-97-14", "464-10-49", "Менеджер"),
+        Abonent("Ирина", "Евгеньевич", "Ширгин", "465-94-64", "465-97-14", "464-10-49", "Менеджер"),
+    };
+
+
+    PhoneBook book;
+
+    for (auto abonent : abonents)
+    {
+        book.addAbonent(abonent);
+    }
+
+    auto listAbonents = book.getAllAbonents();
+
+    for (auto ab : listAbonents)
+    {
+        ab.print();
+    }
 
     return 0;
 }
